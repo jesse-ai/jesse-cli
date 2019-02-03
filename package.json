@@ -6,11 +6,22 @@
   "bin": {
     "jesse": "bin/jesse"
   },
-  "repository": "git@github.com/jesse-ai/jesse.git",
+  "repository": "git@github.com/jesse-ai/jesse-cli.git",
   "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
+  "keywords": [
+    "cryptocurrency", 
+      "trading-bot", 
+      "trading-algorithms", 
+      "trading", 
+      "crypto", 
+      "framework", 
+      "nodejs", 
+      "algo-trading", 
+      "algorithmic-trading", 
+      "tensorflowjs", 
+      "genetic-algorithm", 
+      "artificial-intelligence"
+  ],  
   "engines": {
     "node": ">=8.11.3",
     "npm": "~5.6.0"
