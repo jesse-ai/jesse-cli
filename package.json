@@ -1,0 +1,39 @@
+{
+  "name": "jesse",
+  "version": "0.1.0",
+  "description": "An advanced trading framework",
+  "preferGlobal": true,
+  "bin": {
+    "jesse": "bin/jesse"
+  },
+  "repository": "git@github.com/jesse-ai/jesse-cli.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=8.11.3",
+    "npm": "~5.6.0"
+  },
+  "author": "Sully Fischer <fischersully@gmail.com>",
+  "license": "AGPL",
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "chalk": "^2.4.2",
+    "colors": "^1.3.3",
+    "commander": "^2.18.0",
+    "did-you-mean": "^0.0.1",
+    "download-git-repo": "^1.1.0",
+    "findup-sync": "^3.0.0",
+    "fs-extra": "^7.0.1",
+    "inquirer": "^6.2.1",
+    "install": "^0.12.1",
+    "ora": "^3.0.0",
+    "snake-case": "^2.1.0",
+    "to-pascal-case": "^1.0.0",
+    "util.promisify": "^1.0.0"
+  },
+  "files": [
+    "src"
+  ]
+}
