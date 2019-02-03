@@ -1,3 +1,13 @@
+/**
+ * Jesse CLI has been created as a further step to make it easier 
+ * for developers to focus mainly on their trading strategies 
+ * and to minimize the initial headache of getting started.  
+ * 
+ * I created this CLI in a very short time by heavily coping the code 
+ * from my friend Luke Policinski's varie/varie-cli. If you're into 
+ * VueJS, make sure to check out https://github.com/variejs/varie
+ */
+
 const path = require('path');
 const inquirer = require('inquirer');
 const program = require("commander");
