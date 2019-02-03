@@ -1,7 +1,7 @@
 {
   "name": "jesse",
   "version": "0.1.0",
-  "description": "An advanced trading framework",
+  "description": "An advanced cryptocurrency trading framework for TypeScript",
   "preferGlobal": true,
   "bin": {
     "jesse": "bin/jesse"
