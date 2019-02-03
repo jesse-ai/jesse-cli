@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('./../src/jesse-cli');
+require('./../src/jesse');
