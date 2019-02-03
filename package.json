@@ -6,7 +6,10 @@
   "bin": {
     "jesse": "bin/jesse"
   },
-  "repository": "git@github.com/jesse-ai/jesse-cli.git",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jesse-ai/jesse.git"
+  }, 
   "main": "index.js",
   "keywords": [
     "cryptocurrency", 
