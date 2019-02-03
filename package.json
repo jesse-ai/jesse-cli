@@ -10,7 +10,6 @@
     "type" : "git",
     "url" : "https://github.com/jesse-ai/jesse.git"
   }, 
-  "main": "index.js",
   "keywords": [
     "cryptocurrency", 
       "trading-bot", 
