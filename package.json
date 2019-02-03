@@ -1,6 +1,6 @@
 {
   "name": "jesse",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An advanced cryptocurrency trading framework for TypeScript",
   "preferGlobal": true,
   "bin": {
