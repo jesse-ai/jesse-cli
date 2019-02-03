@@ -1,6 +1,6 @@
 {
   "name": "jesse",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "An advanced cryptocurrency trading framework for TypeScript",
   "preferGlobal": true,
   "bin": {
@@ -47,6 +47,7 @@
     "util.promisify": "^1.0.0"
   },
   "files": [
-    "src"
+    "src", 
+    "bin"
   ]
 }
