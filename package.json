@@ -1,53 +1,60 @@
 {
-  "name": "jesse",
-  "version": "0.1.7",
-  "description": "An advanced cryptocurrency trading framework for TypeScript",
-  "preferGlobal": true,
-  "bin": {
-    "jesse": "bin/jesse"
-  },
-  "repository": {
-    "type" : "git",
-    "url" : "https://github.com/jesse-ai/jesse.git"
-  }, 
-  "keywords": [
-    "cryptocurrency", 
-      "trading-bot", 
-      "trading-algorithms", 
-      "trading", 
-      "crypto", 
-      "framework", 
-      "nodejs", 
-      "algo-trading", 
-      "algorithmic-trading", 
-      "tensorflowjs", 
-      "genetic-algorithm", 
-      "artificial-intelligence"
-  ],  
-  "engines": {
-    "node": ">=8.11.3",
-    "npm": "~5.6.0"
-  },
-  "author": "Sully Fischer <fischersully@gmail.com>",
-  "license": "AGPL-3.0-or-later",
-  "dependencies": {
-    "camelcase": "^5.0.0",
-    "chalk": "^2.4.2",
-    "colors": "^1.3.3",
-    "commander": "^2.18.0",
-    "did-you-mean": "^0.0.1",
-    "download-git-repo": "^1.1.0",
-    "findup-sync": "^3.0.0",
-    "fs-extra": "^7.0.1",
-    "inquirer": "^6.2.1",
-    "install": "^0.12.1",
-    "ora": "^3.0.0",
-    "snake-case": "^2.1.0",
-    "to-pascal-case": "^1.0.0",
-    "util.promisify": "^1.0.0"
-  },
-  "files": [
-    "src", 
-    "bin"
-  ]
+    "name": "jesse",
+    "version": "0.1.8",
+    "description": "An advanced cryptocurrency trading framework for TypeScript",
+    "author": "Sully Fischer <fischersully@gmail.com>",
+    "license": "AGPL-3.0-or-later",
+    "preferGlobal": true,
+    "bin": {
+        "jesse": "bin/jesse"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jesse-ai/jesse.git"
+    },
+    "keywords": [
+        "cryptocurrency",
+        "trading-bot",
+        "trading-algorithms",
+        "trading",
+        "crypto",
+        "framework",
+        "nodejs",
+        "algo-trading",
+        "algorithmic-trading",
+        "tensorflowjs",
+        "genetic-algorithm",
+        "artificial-intelligence"
+    ],
+    "engines": {
+        "node": ">=8.11.3",
+        "npm": "~5.6.0"
+    },
+    "dependencies": {
+        "camelcase": "^5.0.0",
+        "chalk": "^2.4.2",
+        "colors": "^1.3.3",
+        "commander": "^2.18.0",
+        "did-you-mean": "^0.0.1",
+        "download-git-repo": "^1.1.0",
+        "findup-sync": "^3.0.0",
+        "fs-extra": "^7.0.1",
+        "inquirer": "^6.2.1",
+        "install": "^0.12.1",
+        "ora": "^3.0.0",
+        "snake-case": "^2.1.0",
+        "to-pascal-case": "^1.0.0",
+        "util.promisify": "^1.0.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^22.1.4",
+        "@types/node": "^9.4.6",
+        "jest": "^22.4.2",
+        "ts-jest": "^22.4.1",
+        "typescript": "^2.7.2"
+    },
+    "files": [
+        "dist",
+        "bin"
+    ]
 }

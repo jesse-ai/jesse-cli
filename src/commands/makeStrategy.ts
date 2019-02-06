@@ -1,9 +1,9 @@
-const fs = require("fs-extra");
-const tellUserFileExists = require("./../utilities/tellUserFileExists");
+import fs from 'fs-extra';
+import tellUserFileExists from './../utilities/tellUserFileExists';
 
-module.exports = function makeStrategy(strategyName, force) {
+export default function makeStrategy(strategyName, force) {
     let path = `${process.env.jesse_path}/strategies/${strategyName}/${strategyName}.ts`;
-    tellUserFileExists(path, "strategy", force).then(valid => {
+    tellUserFileExists(path, 'strategy', force).then(valid => {
         if (valid) {
             try {
                 fs.copySync(`${process.env.jesse_vendor_path}/templates/ExampleStrategy.ts`, path);
@@ -13,4 +13,4 @@ module.exports = function makeStrategy(strategyName, force) {
             }
         }
     });
-};
+}

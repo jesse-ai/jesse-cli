@@ -1,7 +1,7 @@
-const chalk = require("chalk");
-const fs = require("fs-extra");
+import chalk from 'chalk';
+import fs from 'fs-extra';
 
-function tellUserFolderExists(path, type = "folder", force) {
+export default function tellUserFolderExists(path, type = "folder", force) {
     return new Promise(resolve => {
         if (force) {
             return resolve(true);
@@ -20,5 +20,3 @@ function tellUserFolderExists(path, type = "folder", force) {
         });
     });
 }
-
-module.exports = tellUserFolderExists;
