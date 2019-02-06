@@ -1,20 +1,10 @@
-/**
- * Jesse CLI has been created as a further step to make it easier 
- * for developers to focus mainly on their trading strategies 
- * and to minimize the initial headache of getting started.  
- * 
- * I created this CLI in a very short time by heavily coping the code 
- * from my friend Luke Policinski's varie/varie-cli. If you're into 
- * VueJS, make sure to check out https://github.com/variejs/varie
- */
+import path from 'path';
+import program from 'commander';
+import commands from './commands';
+import Matcher from 'did-you-mean';
+import findup from 'findup-sync';
 
-const path = require('path');
-const inquirer = require('inquirer');
-const program = require("commander");
-const commands = require("./commands");
-const Matcher = require("did-you-mean");
-const nodeModulesPath = require('./utilities/findNodeModules')();
-
+const nodeModulesPath: string = findup('node_modules');
 let packageJson = null;
 try {
     packageJson = require(`${nodeModulesPath}/../package.json`);
@@ -34,7 +24,7 @@ program
     .usage("<command> [options]");
 
 program
-    .command("new")
+    .command("init")
     .description("Creates a new jesse instance")
     .action(function (projectName, branch = "master") {
         commands.newProject(projectName, branch, program.force);
@@ -53,7 +43,7 @@ program.command("*").action(function (command) {
     if (command.includes("make")) {
         matcher.add(
             "make:strategy",
-            "new"
+            "init"
         );
     }
 
