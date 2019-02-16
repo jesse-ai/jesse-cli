@@ -1,6 +1,6 @@
 {
     "name": "jesse",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "description": "An advanced cryptocurrency trading framework for TypeScript",
     "author": "Sully Fischer <fischersully@gmail.com>",
     "license": "AGPL-3.0-or-later",
