@@ -25,14 +25,14 @@ program
 
 program
     .command("init")
-    .description("Creates a new jesse instance")
+    .description("Initially creates a new jesse instance")
     .action(function (projectName, branch = "master") {
         commands.newProject(projectName, branch, program.force);
     });
 
 program
     .command("make:strategy")
-    .description("Creates a trading strategy folder in the strategies directory")
+    .description("Makes a new strategy folder in /strategies")
     .action(function (strategyName) {
         commands.makeStrategy(strategyName, program.force);
     });
