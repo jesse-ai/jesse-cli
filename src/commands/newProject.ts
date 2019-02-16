@@ -29,15 +29,7 @@ export default function makeProject(projectName, branch, force = false) {
                         exec(`cd ${projectDirectory} && ${hasNvm ? `${loadNvm} &&` : ''} npm install`).then(
                             () => {
                                 spinner.succeed(`NPM modules installed.`);
-                                spinner.start('Building Project.');
-                                exec(`cd ${projectDirectory} && ${hasNvm ? `${loadNvm} &&` : ''}`).then(
-                                    () => {
-                                        spinner.succeed('Your instance of Jesse is ready. Happy trading!');
-                                    },
-                                    err => {
-                                        spinner.fail(err);
-                                    }
-                                );
+                                spinner.succeed('Your instance of Jesse is ready. Happy trading!');
                             },
                             err => {
                                 spinner.fail(err);
