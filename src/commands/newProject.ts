@@ -21,7 +21,7 @@ export default function makeProject(projectName, branch, force = false) {
                     if (err) {
                         spinner.fail('Failed to download jesse : ' + err.message.trim());
                     } else {
-                        exec(`cd ${projectDirectory} && cp .env.example .env`);
+                        exec(`cd ${projectDirectory} && cp .env.example .env && touch storage/db.sqlite`);
 
                         spinner.succeed(`Created ${projectName}`);
                         spinner.start('Running npm install.');
