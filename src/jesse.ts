@@ -31,20 +31,6 @@ program
     });
 
 program
-    .command("backtest")
-    .description("Runs the backTest simulation")
-    .action((config = "") => {
-        commands.backTest(config);
-    });
-
-program
-    .command("livetrade")
-    .description("Starts trading live on the exchange.")
-    .action((config = "") => {
-        commands.liveTrade(config);
-    });
-
-program
     .command("make:strategy")
     .description("Makes a new strategy folder in /strategies")
     .action(function (strategyName) {
